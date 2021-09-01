@@ -14,12 +14,12 @@ Alpha 1 release: All major bugs have (hopefully) been patched. New functions wil
 
 Feature additions & bugfixes:
 
--Anime model for realesrgan
--2x model
--target output path
--omission of outscaling (note, may need to check defaults in inference.py)
--target fps no longer causes duplicates prior to ffmpeg end-phase (prevents upscaler from wasting gpu cycles on duplicate frames; major speed increase)
--notebook set to high memory - necessary for RIFE
+- :white_check_mark: Anime model for realesrgan
+- :white_check_mark: 2x model
+- :white_check_mark: target output path
+- :white_check_mark: omission of outscaling (note, may need to check defaults in inference.py)
+- :white_check_mark: target fps no longer causes duplicates prior to ffmpeg end-phase (prevents upscaler from wasting gpu cycles on duplicate frames; major speed increase)
+- :white_check_mark: notebook set to high memory - necessary for RIFE
 
 ---
 
@@ -31,4 +31,11 @@ Planned additions:
 - [ ] better documentation for exp setting (it's mysterious)
 - [ ] face detection for real-esrgan
 - [ ] h264 option (for people with older rigs)
+- [ ] Preview video option for people who don't want to download the full video yet
+
+
+Difficulties (may take longer to figure out)
+- [ ] target output path for RIFE
+- [ ] target duration for RIFE (need to understand how exp works, then I'll just have it divide)
+
 
