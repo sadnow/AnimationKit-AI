@@ -2,9 +2,18 @@
 
 *Early Alpha Google Colab Notebook*
 
-1. [AnimationKit Colab Notebook](https://github.com/sadnow/RIFE-Google-Colab-Simplified/blob/main/AnimationKit_Rife_RealESRGAN_Upscaling_Interpolation.ipynb) for Real-ESRGAN <a href="https://github.com/sadnow/RIFE-Google-Colab-Simplified/blob/main/AnimationKit_Rife_RealESRGAN_Upscaling_Interpolation.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="google colab logo"></a>.
+1. [AnimationKit Colab Notebook](https://github.com/sadnow/RIFE-Google-Colab-Simplified/blob/main/AnimationKit_Rife_RealESRGAN_Upscaling_Interpolation.ipynb) for Real-ESRGAN <a href="https://colab.research.google.com/github/sadnow/AnimationKit-AI_Upscaling-Interpolation_RIFE-RealESRGAN/blob/main/AnimationKit_Rife_RealESRGAN_Upscaling_Interpolation.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="google colab logo"></a>.
 
-Features Real-ESRGAN upscaling, RIFE interpolation/motion smoothing, and FFMPEG x265 
+
+Features Real-ESRGAN video upscaling, RIFE interpolation/motion smoothing, (improvised) deflickering, and FFMPEG hevc_nvenc (h265) compactor
+
+#ALPHA 2: Released 9/4/21
+
+Feature additions
+
+- :white_check_mark: Deflickering (P3)
+- :white_check_mark: Upscaling from individual frames (P2)
+- :white_check_mark: Target length (in seconds) for RIFE interpolation - Replaces old length_multiplier option
 
 Credits: Motion smoothing conceived from "Zoom animation processing and motion interpolation" added by https://twitter.com/unltd_dream_co. This part of the script uses [RIFE real-time video interpolation](https://github.com/hzwer/arXiv2020-RIFE) to smooth out the resulting video. 
 
@@ -26,11 +35,9 @@ Feature additions & bugfixes:
 ---
 
 Planned additions:
-- [ ] DEFLICKERING. Good for claymations, stop motions, and of course VQGAN+CLIP animations. Will likely use ffmpeg filters to start
-- [ ] Deflicker options (am and pm deflicker flags may be optimal)
+- [ ] More deflicker options (am and pm deflicker flags may be optimal)
 - [ ] --skip option for RIFE
 - [ ] --tiles option for RIFE/Real-ESRGAN (?)
-- [ ] better documentation for exp setting (it's mysterious)
 - [ ] face detection for real-esrgan
 - [ ] h264 option (for people with older rigs)
 - [ ] Preview video option for people who don't want to download the full video yet
