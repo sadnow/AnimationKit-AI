@@ -1,4 +1,4 @@
-Dev Note 12/22/21: This app will be undergoing long-needed improvements throughout the next few weeks. Future advances in upscaling and interpolation will be considerd as the dev catches up on testing. Thanks for all the interest!
+Dev Note 12/22/21: This app will be undergoing long-needed improvements and bug-fixes throughout the next few weeks. Future advances in upscaling and interpolation will be considerd as the dev catches up on testing. Thanks for all the interest!
 
 # AnimationKit - AI Upscaling & Interpolation using Real-ESRGAN+RIFE
 
