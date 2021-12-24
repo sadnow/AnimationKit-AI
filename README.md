@@ -1,21 +1,26 @@
-Dev Note 12/22/21: This app will be undergoing long-needed improvements and bug-fixes throughout the next few weeks. Future advances in upscaling and interpolation will be considerd as the dev catches up on testing. Thanks for all the interest!
+ALPHA 2.5: Frostbite Revival (Released 12/23/21)
+
+Changelog:
+
+    [ UI ] Chained design. All steps link to one another! Use the master override toggles to skip processes.
+    [ Upscaling ] GFPGAN face-enhance toggle (embedded in Real-ESRGAN)
+    [ Interpolation ] Practical-RIFE implementation; 4.0 model
+    [ File mgmt ] Compatibility with padded filenames, File overwrite protection, verification of completion
+    [ Misc ] Forked essential dependencies for long-term backwards compatibility; if needed.
+
+*This updates brings AnKit back to a functioning state. Upcoming updates will make use of recent prerequisite updates and coinciding AI advances. *
+
+---
 
 # AnimationKit - AI Upscaling & Interpolation using Real-ESRGAN+RIFE
+*Your all-in-one post-processing tool.*
 
 *Early Alpha Google Colab Notebook*
 
 1. [AnimationKit Colab Notebook](https://github.com/sadnow/RIFE-Google-Colab-Simplified/blob/main/AnimationKit_Rife_RealESRGAN_Upscaling_Interpolation.ipynb) for Real-ESRGAN <a href="https://colab.research.google.com/github/sadnow/AnimationKit-AI_Upscaling-Interpolation_RIFE-RealESRGAN/blob/main/AnimationKit_Rife_RealESRGAN_Upscaling_Interpolation.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="google colab logo"></a>.
 
 
-Features Real-ESRGAN video upscaling, RIFE interpolation/motion smoothing, (improvised) deflickering, and FFMPEG hevc_nvenc (h265) compactor
-
-#ALPHA 2: Released 9/4/21
-
-Feature additions
-
-- :white_check_mark: Deflickering (P3)
-- :white_check_mark: Upscaling from individual frames (P2)
-- :white_check_mark: Target length (in seconds) for RIFE interpolation - Replaces old length_multiplier option
+Features Real-ESRGAN video upscaling, RIFE interpolation/motion smoothing, and FFMPEG hevc_nvenc (h265) compression
 
 Credits: Motion smoothing conceived from "Zoom animation processing and motion interpolation" added by https://twitter.com/unltd_dream_co. This part of the script uses [RIFE real-time video interpolation](https://github.com/hzwer/arXiv2020-RIFE) to smooth out the resulting video. 
 
@@ -52,4 +57,10 @@ Difficulties (may take longer to figure out)
 
 Feel free to report bugs!
 
+Prior Changelog (Incomplete)
 
+#ALPHA 2: Released 9/4/21
+Feature additions
+- :🔻: Deflickering [Depcrecated]
+- :white_check_mark: Upscaling from individual frames (P2)
+- :white_check_mark: Target length (in seconds) for RIFE interpolation - Replaces old length_multiplier option
